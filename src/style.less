@@ -1,0 +1,25 @@
+.size{
+  width: 100px;
+  height: 100px;
+}
+
+.size2(@w){
+  width: @w;
+  height: @w
+}
+
+.box{
+  .size();
+  .size2(200px);
+  background-color: red;
+}
+.hoverShadow(){
+  transition: all .5s;
+  &:hover{
+    transform: translate3d(0,-3px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2, green, blue, alpha);
+  }
+}
+
+
+// 在style中引入 @import url()
